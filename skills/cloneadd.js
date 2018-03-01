@@ -6,6 +6,7 @@ module.exports = function(controller) {
         var email = message.user;
         var CiscoSpark = require('node-ciscospark');
         var async = require('async');
+        var spark = new CiscoSpark(process.env.SPARK_TOKEN);
 
         var spaceSeperator = " ";
         var comaSeperator = ",";
@@ -23,7 +24,7 @@ module.exports = function(controller) {
                        console.log(response);
                      });
                 });
-                bot.reply(message, "Bienvenidos :)");
+                bot.reply(message, "Usuarios añadidos!");
             }
         }
     });
