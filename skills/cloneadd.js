@@ -23,7 +23,7 @@ module.exports = function(controller) {
                        console.log(response);
                      });
                 });
-                bot.reply(message, "Gente añadida :)");
+                bot.reply(message, "Bienvenidos :)");
             }
         }
     });
